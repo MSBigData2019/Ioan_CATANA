@@ -41,7 +41,10 @@ def occurences(text):
 #Write a program that maps a list of words into a list of
 #integers representing the lengths of the correponding words.
 def length_words(array):
-    return
+    list_res = []
+    for i in array:
+        list_res.append(len(i))
+    return list_res
 
 
 #Write a function that takes a number and returns a list of its digits.
