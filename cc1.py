@@ -49,11 +49,12 @@ def length_words(array):
 
 #Write a function that takes a number and returns a list of its digits.
 def number2digits(number):
-     list_res = []
-     while (number > 0):
-         number = number // 10
-         list_res.append(number)
-     return list_res
+    list_res = []
+    while (number > 0):
+        list_res.append(number % 10)
+        number = number // 10
+
+    return list(reversed(list_res))
 
 #Write function that translates a text to Pig Latin and back.
 #English is translated to Pig Latin by taking the first letter of every word,
