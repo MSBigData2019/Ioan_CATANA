@@ -1,12 +1,8 @@
 # coding: utf-8
 
 import requests
-import unittest
-import re
 import pandas as pd
-from bs4 import BeautifulSoup
 import json
-from requests.auth import HTTPBasicAuth
 
 website_url = "https://gist.github.com/paulmillr/2657075"
 users_dict = {}
@@ -50,8 +46,6 @@ users_list = get_users_list(website_url)
 for user in users_list:
     user_link = "https://api.github.com/users/" + user + "/repos?per_page=100"
     users_dict[user] = get_avg_stars(user_link, my_token)
-
-#print(users_dict)
 
 sorted_list = sorted(zip(users_dict.values(), users_dict.keys()), reverse=True)
 print(sorted_list)
