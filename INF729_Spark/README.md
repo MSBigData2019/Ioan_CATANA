@@ -12,7 +12,7 @@ L’IDE IntelliJ a été utilisé pour le développement de ce projet.
 Le code source se trouve dans : TP3_Spark/src/main/scala/com/sparkProject/
 
 Les données ont été nettoyées préalablement et sont incluses dans le répertoire suivant:
-TP3_Spark/data/TP3/prepared_trainingset
+TP3_Spark/data/TP3/prepared_trainingset<br>
 D'ailleurs le fichier source Trainer.scala contient le chemin relatif (data/TP3/prepared_trainingset) vers les donées, donc il faut juste s'assurer que les données sont bien présentes à cet entroit, sinon il est aussi possible de changer l'emplacement en modifiant la variable dfsFilename.
 
 Pour lancer le projet il faut se placer au niveau du répertoire **TP3_Spark** et puis exécuter la commande suivante:
